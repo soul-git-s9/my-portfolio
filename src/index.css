@@ -1,0 +1,87 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #0a0a0a;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+.portfolio-link {
+  position:absolute;
+  top:0;
+  right:0;
+  
+}
+
+.portfolio-link a{
+  text-decoration: none;
+  color:#fff;
+}
+
+.portfolio-link a:hover{
+  color:#ffb2b2;
+}
+
+
+
+/* marquee 스타일 */
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  margin-top:-50px;
+}
+
+.marquee {
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 200px;
+  color: #d9d9d9;
+  width: fit-content;
+  min-width: 100%;
+  animation: marquee 12s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}

@@ -1,0 +1,88 @@
+::-webkit-scrollbar {
+    height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 12px 12px 12px 12px;
+}
+
+.portfolio-page {
+    position:relative;
+    width:1600px;
+    margin:0 auto;
+    padding: 20px;
+    text-align: center;
+  
+}
+
+.portfolio-page h2{
+    font-size:40px;
+    color:#d9d9d9;
+}
+
+.home-link {
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+.home-link a{
+    text-decoration: none;
+    color:#fff;
+  }
+  
+.home-link a:hover{
+    color:#ffb2b2;
+}
+  
+
+.frame-container {
+  display: flex;
+  gap: 20px; 
+  padding: 26px;
+  overflow-x:scroll;
+  overflow-y:hidden;
+}
+
+.frame {
+  width: 500px;
+  min-width:500px;
+  height: 400px;
+  border: 5px solid #333;
+  border-radius: 15px;
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.frame a {
+    display:block;
+    margin-top:10px;
+    padding:5px 10px;
+    background-color:#fff;
+    color:#000;
+    text-decoration:none;
+    border-radius:10px;
+}
+.frame a:hover {
+    font-weight:bold;
+    color:#333;
+}
+
+.frame img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.frame p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.frame:hover {
+  transform: scale(1.05);
+}
