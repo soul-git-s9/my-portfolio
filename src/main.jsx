@@ -10,7 +10,7 @@ import './index.css'
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
-  <BrowserRouter>
+  <BrowserRouter basename="/my-portfolio">
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="/Portfolio" element={<Portfolio />} />
